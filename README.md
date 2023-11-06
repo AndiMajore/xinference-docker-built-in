@@ -11,6 +11,6 @@ This project allows easy deployment of any built-in LLM using [xinference](https
 5. Optional: There are two example environment file examples that can be commented and un-commented in the docker-compose.yml. The llama-2-chat file shows you how to use models that require a huggingface access token (if the token is placed in the .env file).
 
 ## Info
-You can find a list of available LLM models in in two ways:
+You can find a list of available LLM models in two ways:
 1. Set the environment variable `LIST=1` in the active .env file. Run `docker-compose up`, which will run the container attached until it prints a list of all available LLMs
 2. Find a maybe not up-to-date list in the xinference documentation [here](https://inference.readthedocs.io/en/latest/models/builtin/index.html)
