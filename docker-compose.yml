@@ -1,12 +1,13 @@
 services:
   xinference:
-    image: xinference_built_in
+    image: andimajore/xinference_built_in:0.6.1
     container_name: xinference_built_in
     build: .
     command: bash launch_script.sh
     restart: always
     env_file:
-      - vicuna-13b.env
+      - zephyr-7b-beta.env
+#      - llama-2-13b.env
     ports:
       - "9997:9997"
     deploy:

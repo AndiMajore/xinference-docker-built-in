@@ -27,5 +27,5 @@ RUN mamba install -c conda-forge huggingface_hub
 WORKDIR /opt/conda/lib/python3.9/site-packages/xinference/
 
 COPY ./launch_script.sh .
+COPY ./login.py .
 COPY ./download_register_and_launch.sh .
-COPY ./login_and_download.py .
