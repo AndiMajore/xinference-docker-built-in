@@ -1,4 +1,4 @@
-# xinference-docker-hf
+# xinference-docker-built-in
 
 This project allows easy deployment of any built-in LLM using [xinference](https://github.com/xorbitsai/inference) and docker.
 
