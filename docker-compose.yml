@@ -1,13 +1,13 @@
 services:
   xinference:
-    image: andimajore/xinference_built_in:0.7.1
+    image: andimajore/xinference_built_in:0.7.5
     container_name: xinference_built_in
     build: .
     command: bash launch_script.sh
     restart: always
     env_file:
 #      - zephyr-7b-beta.env
-      - mistral-instruct.env
+      - llama-2-13b.env
     ports:
       - "9997:9997"
     deploy:
